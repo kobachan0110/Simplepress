@@ -106,7 +106,7 @@ if( isset( $_POST['formlogin'] ) ) {
             d.setTime(d.getTime() + (hours*60*60*1000));
             var expires = "expires=" + d.toUTCString();
             document.cookie = name + "=" + value + ";" + expires + ";" + "path=/";
-            window.location = "/admin";
+            window.location = "./admin";
         }
         setCookie('sp-uid','<?php echo $token; ?>', 1);
         </script>        
@@ -130,7 +130,7 @@ if( isset( $_POST['formlogin'] ) ) {
 <input type="text" class="login-input" name="formlogin" placeholder="Email Adress" autofocus>
 <input type="password" class="login-input" name="formpass" placeholder="Password">
 <input type="submit" value="Lets Go" class="login-button">
-<p class="login-lost"><a href="../">Zur Homepage</a></p>
+<p class="login-lost"><a href="./">Zur Homepage</a></p>
 </form>
 
 <?php } ?>
