@@ -29,8 +29,8 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `menu_id`, `label`, `link`, `parent`, `sort`) VALUES
-(NULL,	1,	'Home',	'../',	0,	1),
-(NULL,	1,	'About', '../?id=1', 0, 2);
+(NULL,	1,	'Home',	'./',	0,	1),
+(NULL,	1,	'About', './?id=1', 0, 2);
 
 -- --------------------------------------------------------
 
